@@ -29,13 +29,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.vitepres/dist
+          publish_dir: ./.vitepress/dist
           enable_jekyll: false
           publish_branch: gh-pages
-
-      # Runs a set of commands using the runners shell
-      - name: Its works
-        run: |
-          echo "----------------------------"
-          echo Yes, it works
-          echo "----------------------------"
